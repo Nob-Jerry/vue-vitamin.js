@@ -1,6 +1,8 @@
 import MainLayout from "@/layouts/MainLayout.vue";
 import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
+import ParentComponent from "@/components/props/ParentComponent.vue";
+
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -20,6 +22,11 @@ const router = createRouter({
           path: "/about",
           name: "About",
           component: About,
+        },
+        {
+          path: "/props",
+          name: "Props",
+          component: ParentComponent,
         },
       ],
     },
